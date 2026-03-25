@@ -49,7 +49,7 @@ def extrair_gasto(texto):
 
 @app.get("/")
 def inicio():
-    return {"mensagem": "Bot financeiro multiusuario 🚀"}
+    return {"status": "ok"}
 
 @app.post("/whatsapp", response_class=PlainTextResponse)
 def receber_whatsapp(Body: str = Form(...), From: str = Form(...)):
